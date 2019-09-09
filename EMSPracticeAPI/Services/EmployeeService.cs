@@ -8,28 +8,28 @@ namespace EMSPracticeAPI.Services
 {
     public class EmployeeService
     {
-        public EmployeeDb EmployeesDb = EmployeeDb.GetInstance;
+        private EmployeeDb _employeesDb = EmployeeDb.GetInstance;
 
         public List<Employee> GetAllEmployees()
         {
-            return EmployeesDb.EmployeeList;
+            return _employeesDb.EmployeeList;
         }
 
         public List<Employee> GetEmployees(string ManagerId)
         {
-            return EmployeesDb.EmployeeList.FindAll(m => m.ManagerId == ManagerId);
+            return _employeesDb.EmployeeList.FindAll(m => m.ManagerId == ManagerId);
         }
 
         public Employee GetEmployee(string EmpId)
         {
-            return EmployeesDb.EmployeeList.FirstOrDefault(e => e.Id == EmpId);
+            return _employeesDb.EmployeeList.FirstOrDefault(e => e.Id == EmpId);
         }
 
         public bool AddEmployee(Employee employee)
         {
             try
             {
-                EmployeesDb.EmployeeList.Add(employee);
+                _employeesDb.EmployeeList.Add(employee);
             }
             catch (Exception e)
             {
@@ -39,7 +39,7 @@ namespace EMSPracticeAPI.Services
         }
         public bool UpdateEmployee(Employee employee)
         {
-            return EmployeesDb.UpdateEmployee(employee);
+            return _employeesDb.UpdateEmployee(employee);
         }
     }
 }
