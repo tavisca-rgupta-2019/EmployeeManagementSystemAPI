@@ -63,9 +63,16 @@ namespace EMSPracticeAPI.Controllers
        
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("Employees/{id}")]
+        public IActionResult Delete(string id)
         {
+            var employee = employeeService.GetEmployee(id);
+            if (employee == null)
+                return BadRequest();
+            employeeService.DeleteEmployee(id);
+            return StatusCode(204);
+
+
         }
     }
 }

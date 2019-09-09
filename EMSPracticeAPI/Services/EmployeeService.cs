@@ -53,5 +53,13 @@ namespace EMSPracticeAPI.Services
                 return false;
             return _employeesDb.UpdateEmployee(employee);
         }
+
+        public void DeleteEmployee(string id)
+        {
+            var index = _employeesDb.EmployeeList.FindIndex(e => e.Id == id);
+           
+            _employeesDb.EmployeeList.RemoveAt(index);
+
+        }
     }
 }
