@@ -25,11 +25,11 @@ namespace EMSPracticeAPI
         {
             EmployeeList = new List<Employee>()
             {
-                new Employee("1","Rohit",25,150000),
-                new Employee("2","Raj",23,45000,"1"),
-                new Employee("3","Rahul",23,45000,"1"),
-                new Employee("4","Varun",23,45000,"2"),
-                new Employee("5","Rochit",23,45000,"2"),
+                new Employee(){Id="1",Name="Rohit",Age=25,Salary=150000 },
+                new Employee(){Id="2",Name="Raj",Age=23,Salary=45000,ManagerId="1" },
+                new Employee(){Id="3",Name="Rahul",Age=23,Salary=45000,ManagerId="1" },
+                new Employee() {Id="4",Name="Varun",Age=23,Salary=45000,ManagerId="2" },
+                new Employee(){Id="5",Name="Rochit",Age=23,Salary=45000,ManagerId="2" }
             };
         }
 

@@ -24,8 +24,16 @@ namespace EMSPracticeAPI.Controllers
         {
             return Ok(employeeService.GetAllEmployees());
         }
-        
-        [HttpGet("Employees/{id}")]
+        [HttpGet("Managers/{id}")]
+        public IActionResult GetEmployees(string id)
+        {
+            var employees = employeeService.GetEmployees(id);
+            if (employees.Count == 0)
+                return NotFound();
+            return Ok(employees);
+        }
+
+        [HttpGet("Employees/{id}",Name ="GetEmployeeInfo")]
         public IActionResult Get(string id)
         {
             var employee = employeeService.GetEmployee(id);
@@ -35,41 +43,24 @@ namespace EMSPracticeAPI.Controllers
 
         }
         [HttpPost("Employees")]
-        public IActionResult Post([FromBody] Employee value)
+        public IActionResult Post([FromBody] EmployeeCreation employee)
         {
-            if (employeeService.AddEmployee(value))
-                return StatusCode(201);
-            return StatusCode(209);
+            var newEmployee = employeeService.AddEmployee(employee);
+            if(newEmployee==null)
+                return BadRequest();
+            return CreatedAtRoute("GetEmployeeInfo", new { id = newEmployee.Id }, newEmployee);
+            
         }
         [HttpPut("Employees")]
         public IActionResult Put([FromBody] Employee value)
         {
             if (employeeService.UpdateEmployee(value))
-                return StatusCode(201);
-            return StatusCode(209);
+                return NoContent();
+            return BadRequest();
 
         }
 
-        // GET api/values/5
        
-        [HttpGet("Managers/{id}")]
-        public IActionResult GetEmployees(string id)
-        {
-            var employees = employeeService.GetEmployees(id);
-            if (employees == null)
-                return NotFound();
-            return Ok(employees);
-        }
-
-
-
-       
-
-        // POST api/values
-       
-
-        // PUT api/values/5
-     
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
