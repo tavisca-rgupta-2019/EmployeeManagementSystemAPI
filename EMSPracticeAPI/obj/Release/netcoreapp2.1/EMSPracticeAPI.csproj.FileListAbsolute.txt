@@ -1,0 +1,14 @@
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\bin\Release\netcoreapp2.1\EMSPracticeAPI.deps.json
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\bin\Release\netcoreapp2.1\EMSPracticeAPI.runtimeconfig.json
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\bin\Release\netcoreapp2.1\EMSPracticeAPI.runtimeconfig.dev.json
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\bin\Release\netcoreapp2.1\EMSPracticeAPI.dll
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\bin\Release\netcoreapp2.1\EMSPracticeAPI.pdb
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.csprojAssemblyReference.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.csproj.CoreCompileInputs.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.RazorAssemblyInfo.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.RazorAssemblyInfo.cs
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.AssemblyInfoInputs.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.AssemblyInfo.cs
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.RazorTargetAssemblyInfo.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.dll
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI\obj\Release\netcoreapp2.1\EMSPracticeAPI.pdb
