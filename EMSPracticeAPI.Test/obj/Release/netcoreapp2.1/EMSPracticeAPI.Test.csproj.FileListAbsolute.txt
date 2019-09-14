@@ -1,0 +1,14 @@
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\EMSPracticeAPI.Test.deps.json
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\EMSPracticeAPI.Test.runtimeconfig.json
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\EMSPracticeAPI.Test.runtimeconfig.dev.json
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\EMSPracticeAPI.Test.dll
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\EMSPracticeAPI.dll
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\bin\Release\netcoreapp2.1\EMSPracticeAPI.pdb
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\obj\Release\netcoreapp2.1\EMSPracticeAPI.Test.csprojAssemblyReference.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\obj\Release\netcoreapp2.1\EMSPracticeAPI.Test.csproj.CoreCompileInputs.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\obj\Release\netcoreapp2.1\EMSPracticeAPI.Test.AssemblyInfoInputs.cache
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\obj\Release\netcoreapp2.1\EMSPracticeAPI.Test.AssemblyInfo.cs
+C:\Users\rogupta\source\repos\EMSPracticeAPI\EMSPracticeAPI.Test\obj\Release\netcoreapp2.1\EMSPracticeAPI.Test.csproj.CopyComplete

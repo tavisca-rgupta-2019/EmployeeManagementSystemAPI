@@ -5,15 +5,12 @@ using System.Threading.Tasks;
 
 namespace EMSPracticeAPI.Models
 {
-    public class Employee
+    public class EmployeeCreationDTO
     {
-        public string Id { get; set; }
         public string Name { get; set; }
 
         public int Age { get; set; }
         public Double Salary { get; set; }
-        public string ManagerId { get; set; }
-      
-
+        public string ManagerId { get; set; } 
     }
 }
