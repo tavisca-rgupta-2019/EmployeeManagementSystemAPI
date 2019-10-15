@@ -5,3 +5,4 @@ WORKDIR /app
 EXPOSE 80
 CMD ["dotnet", "EMSPracticeAPI.dll"]
 #this is test for webhook
+#Changing the jenkins ip to the public ip did not work for me
