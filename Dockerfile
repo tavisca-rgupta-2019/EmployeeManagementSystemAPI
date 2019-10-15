@@ -4,5 +4,4 @@ COPY ./EMSPracticeAPI/bin/Release/netcoreapp2.1/publish /app
 WORKDIR /app
 EXPOSE 80
 CMD ["dotnet", "EMSPracticeAPI.dll"]
-#this is test for webhook
-#Changing the jenkins ip to the public ip did not work for me
+#this is test of webhook
