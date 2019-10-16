@@ -24,7 +24,7 @@ pipeline {
             }
         }
         stage('Test') {
-		when{expression{params.RELEASE_ENVIRONMENT=='Test'}
+		when{expression{params.RELEASE_ENVIRONMENT=='Test'};expression{params.RELEASE_ENVIRONMENT=='Build'}
 		}
             steps {
                 powershell'''
