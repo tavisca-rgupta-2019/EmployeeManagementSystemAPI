@@ -36,7 +36,7 @@ pipeline {
 		when{ expression{params.RELEASE_ENVIRONMENT=='Publish'}
 		    }
             steps {
-                echo 'PUBLISHING....'
+                echo 'PUBLISHING.........'
             }
         }
     }
