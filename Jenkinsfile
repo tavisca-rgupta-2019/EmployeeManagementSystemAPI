@@ -5,7 +5,7 @@ pipeline {
 		string(name : 'TEST_PROJECT_PATH', defaultValue: 'EMSPracticeAPI.Test/EMSPracticeAPI.Test.csproj')
 		 string(name : 'PROJECT_FILE_PATH', defaultValue: 'EMSPracticeAPI/EMSPracticeAPI.csproj')
 		string(name : 'SOLUTION_DLL_FILE', defaultValue: 'EMSPracticeAPI.dll')
-		choice(name: 'RELEASE_ENVIRONMENT',choices: ['Build','Test','Publish'],description:'Pick Something')
+		choice(name: 'RELEASE_ENVIRONMENT',defaultValue:'Build',choices: ['Build','Test','Publish'],description:'Pick Something')
 	}
 
     stages {
