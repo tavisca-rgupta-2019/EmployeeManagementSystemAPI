@@ -17,11 +17,11 @@ namespace EMSPracticeAPI
         {
             EmployeeList = new List<EmployeeDTO>()
             {
-                new EmployeeDTO(){Id="1",Name="Rohit",Age=25,Salary=150000 },
-                new EmployeeDTO(){Id="2",Name="Raj",Age=23,Salary=45000,ManagerId="1" },
-                new EmployeeDTO(){Id="3",Name="Rahul",Age=23,Salary=45000,ManagerId="1" },
-                new EmployeeDTO() {Id="4",Name="Varun",Age=23,Salary=45000,ManagerId="2" },
-                new EmployeeDTO(){Id="5",Name="Rochit",Age=23,Salary=45000,ManagerId="2" }
+                new EmployeeDTO(){Id=1,Name="Rohit",Age=25,Salary=150000 },
+                new EmployeeDTO(){Id=2,Name="Raj",Age=23,Salary=45000,ManagerId=1 },
+                new EmployeeDTO(){Id=3,Name="Rahul",Age=23,Salary=45000,ManagerId=1 },
+                new EmployeeDTO() {Id=4,Name="Varun",Age=23,Salary=45000,ManagerId=2 },
+                new EmployeeDTO(){Id=5,Name="Rochit",Age=23,Salary=45000,ManagerId=2 }
             };
         }
 

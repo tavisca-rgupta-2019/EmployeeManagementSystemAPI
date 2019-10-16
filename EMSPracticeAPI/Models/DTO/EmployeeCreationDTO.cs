@@ -11,6 +11,6 @@ namespace EMSPracticeAPI.Models
 
         public int Age { get; set; }
         public Double Salary { get; set; }
-        public string ManagerId { get; set; } 
+        public int ManagerId { get; set; } 
     }
 }

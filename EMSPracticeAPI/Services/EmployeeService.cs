@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace EMSPracticeAPI.Services
 {
@@ -20,7 +20,7 @@ namespace EMSPracticeAPI.Services
             return _employeesDb.GetEmployeesList();
         }
 
-        public EmployeeDTO GetManager(string managerId)
+        public EmployeeDTO GetManager(int managerId)
         {
             var employeeList=_employeesDb.GetEmployeesList();
             var isManager=employeeList.Any(e => e.ManagerId == managerId);
@@ -29,7 +29,7 @@ namespace EMSPracticeAPI.Services
             return null;
         }
 
-        public List<EmployeeDTO> GetEmployeesWorkingUnderSpecificManager(string managerId)
+        public List<EmployeeDTO> GetEmployeesWorkingUnderSpecificManager(int managerId)
         {
             var isManager = _employeesDb.GetEmployeesList().Any(e => e.ManagerId == managerId);
             if (isManager)
@@ -37,31 +37,35 @@ namespace EMSPracticeAPI.Services
             return null;
         }
 
-        public EmployeeDTO GetEmployee(string empId)
+        public EmployeeDTO GetEmployee(int empId)
         {
             return _employeesDb.GetEmployeesList().FirstOrDefault(e => e.Id == empId);
         }
 
-        public EmployeeDTO AddEmployee(EmployeeCreationDTO employee)
+        public EmployeeDTO AddEmployee(EmployeeDTO employee)
         {
-            var maxEmployeeId = _employeesDb.GetEmployeesList().Max(e => Int32.Parse(e.Id));
-            var newEmployee = new EmployeeDTO()
-            {
-                Id = (++maxEmployeeId).ToString(),
-                Name = employee.Name,
-                Age = employee.Age,
-                Salary = employee.Salary,
-                ManagerId = employee.ManagerId
-            };
-            try
-            {
-                _employeesDb.GetEmployeesList().Add(newEmployee);
-            }
-            catch (Exception e)
-            {
-                return null;
-            }
-            return newEmployee;
+            
+            
+            
+            return employee;
+            //var maxEmployeeId = _employeesDb.GetEmployeesList().Max(e =>e.Id);
+            //var newEmployee = new EmployeeDTO()
+            //{
+            //    Id = ++maxEmployeeId,
+            //    Name = employee.Name,
+            //    Age = employee.Age,
+            //    Salary = employee.Salary,
+            //    ManagerId = employee.ManagerId
+            //};
+            //try
+            //{
+            //    _employeesDb.GetEmployeesList().Add(newEmployee);
+            //}
+            //catch (Exception e)
+            //{
+            //return null;
+            //}
+            //return newEmployee;
         }
         public bool UpdateEmployee(EmployeeDTO employee)
         {
@@ -71,7 +75,7 @@ namespace EMSPracticeAPI.Services
             return _employeesDb.UpdateEmployee(employee);
         }
 
-        public void DeleteEmployee(string id)
+        public void DeleteEmployee(int id)
         {
             var index = _employeesDb.GetEmployeesList().FindIndex(e => e.Id == id);
            

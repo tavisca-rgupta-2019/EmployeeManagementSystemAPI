@@ -9,12 +9,12 @@ namespace EMSPracticeAPI.Services
     public interface IEmployeeService
     {
         List<EmployeeDTO> GetAllEmployees();
-        EmployeeDTO GetManager(string managerId);
-        List<EmployeeDTO> GetEmployeesWorkingUnderSpecificManager(string managerId);
-        EmployeeDTO GetEmployee(string empId);
-        EmployeeDTO AddEmployee(EmployeeCreationDTO employee);
+        EmployeeDTO GetManager(int managerId);
+        List<EmployeeDTO> GetEmployeesWorkingUnderSpecificManager(int managerId);
+        EmployeeDTO GetEmployee(int empId);
+        EmployeeDTO AddEmployee(EmployeeDTO employee);
         bool UpdateEmployee(EmployeeDTO employee);
-        void DeleteEmployee(string id);
+        void DeleteEmployee(int id);
 
     }
 }

@@ -25,7 +25,7 @@ namespace EMSPracticeAPI.Controllers
             return Ok(_employeeService.GetAllEmployees());
         }
         [HttpGet("Managers/{id}")]
-        public IActionResult GetManager(string id)
+        public IActionResult GetManager(int id)
         {
             var manager = _employeeService.GetManager(id);
             if (manager == null)
@@ -33,7 +33,7 @@ namespace EMSPracticeAPI.Controllers
             return Ok(manager);
         }
         [HttpGet("Managers/{managerId}/Employees")]
-        public IActionResult GetEmployeesUnderSpeicificManager(string managerId)
+        public IActionResult GetEmployeesUnderSpeicificManager(int managerId)
         {
             var employees = _employeeService.GetEmployeesWorkingUnderSpecificManager(managerId);
             if (employees == null)
@@ -43,7 +43,7 @@ namespace EMSPracticeAPI.Controllers
         }
 
         [HttpGet("Employees/{id}",Name ="GetEmployeeInfo")]
-        public IActionResult Get(string id)
+        public IActionResult Get(int id)
         {
             var employee = _employeeService.GetEmployee(id);
             if (employee == null)
@@ -52,12 +52,13 @@ namespace EMSPracticeAPI.Controllers
 
         }
         [HttpPost("Employees")]
-        public IActionResult Post([FromBody] EmployeeCreationDTO employee)
+        public IActionResult Post([FromBody] EmployeeDTO employee)
         {
             var newEmployee = _employeeService.AddEmployee(employee);
             if(newEmployee==null)
                 return BadRequest();
-            return CreatedAtRoute("GetEmployeeInfo", new { id = newEmployee.Id }, newEmployee);
+            return StatusCode(201);
+            //return CreatedAtRoute("GetEmployeeInfo", new { id = newEmployee.Id }, newEmployee);
             
         }
         [HttpPut("Employees")]
@@ -73,7 +74,7 @@ namespace EMSPracticeAPI.Controllers
 
         // DELETE api/values/5
         [HttpDelete("Employees/{id}")]
-        public IActionResult Delete(string id)
+        public IActionResult Delete(int id)
         {
             var employee = _employeeService.GetEmployee(id);
             if (employee == null)
